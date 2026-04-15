@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Denizli Yatak Yıkama - Buharlı Mayt Temizliği | Zerda</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0056b3',
+                        primaryHover: '#004494',
+                        whatsapp: '#25D366',
+                        whatsappHover: '#1ebe57',
+                        dark: '#333333',
+                        light: '#f4f7f6',
+                    },
+                    fontFamily: {
+                        sans: ['Poppins', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-sans text-gray-600 bg-light leading-relaxed flex flex-col min-h-screen">
+
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <a href="index.html" class="text-2xl font-bold text-primary">Ay Halı Yıkama</a>
+                
+                <nav class="hidden md:flex space-x-8 items-center">
+                    <a href="index.html" class="text-gray-700 font-medium hover:text-primary transition">Ana Sayfa</a>
+                    
+                    <div class="relative group h-full flex items-center py-6">
+                        <a href="index.html#services" class="text-primary font-medium flex items-center cursor-pointer">
+                            Hizmetler <i class="fas fa-chevron-down ml-1 text-xs"></i>
+                        </a>
+                        <div class="absolute top-16 left-0 w-56 bg-white border border-gray-100 shadow-lg rounded-b-md opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+                            <a href="hali-yikama.html" class="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-primary border-b border-gray-50 transition">Halı Yıkama</a>
+                            <a href="koltuk-yikama.html" class="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-primary border-b border-gray-50 transition">Koltuk Yıkama</a>
+                            <a href="perde-yikama.html" class="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-primary border-b border-gray-50 transition">Stor & Zebra Perde Yıkama</a>
+                            <a href="yatak-yikama.html" class="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-50 hover:text-primary border-b border-gray-50 transition">Yatak Yıkama</a>
+                            <a href="oto-koltuk-yikama.html" class="block px-4 py-3 text-sm text-primary font-semibold hover:bg-gray-50 hover:text-primary border-b border-gray-50 transition">Oto Koltuk Yıkama</a>
+                            
+                        </div>
+                    </div>
+
+                    <a href="index.html#pricing" class="text-gray-700 font-medium hover:text-primary transition">Fiyatlar</a>
+                    <a href="#contact" class="text-gray-700 font-medium hover:text-primary transition">İletişim</a>
+                </nav>
+
+                <button id="mobile-menu-btn" class="md:hidden text-gray-700 text-2xl focus:outline-none">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 absolute w-full shadow-xl z-50">
+            <div class="px-4 pt-2 pb-4 space-y-1">
+                <a href="index.html" class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-primary hover:bg-gray-50 rounded-md">Ana Sayfa</a>
+                
+                <div>
+                    <button id="mobile-services-btn" class="w-full flex justify-between items-center px-3 py-2 text-base font-medium text-gray-700 hover:text-primary hover:bg-gray-50 rounded-md focus:outline-none">
+                        Hizmetler
+                        <i id="mobile-services-icon" class="fas fa-chevron-down text-sm transition-transform duration-300"></i>
+                    </button>
+                    <div id="mobile-services-menu" class="hidden pl-6 pr-3 py-1 space-y-1 bg-gray-50 rounded-md mt-1 border border-gray-100">
+                        <a href="hali-yikama.html" class="block px-3 py-2 text-sm font-medium text-gray-600 hover:text-primary">Halı Yıkama</a>
+                        <a href="koltuk-yikama.html" class="block px-3 py-2 text-sm font-medium text-gray-600 hover:text-primary">Koltuk Yıkama</a>
+                        <a href="perde-yikama.html" class="block px-3 py-2 text-sm font-medium text-gray-600 hover:text-primary">Stor & Zebra Perde</a>
+                        <a href="yorgan-yikama.html" class="block px-3 py-2 text-sm font-medium text-gray-600 hover:text-primary">Yatak</a>
+                        <a href="yatak-yikama.html" class="block px-3 py-2 text-sm font-medium text-primary">Araba Koltuğu Yıkama</a>
+                        
+                    </div>
+                </div>
+
+                <a href="index.html#pricing" class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-primary hover:bg-gray-50 rounded-md">Fiyatlar</a>
+                <a href="#contact" class="block px-3 py-2 text-base font-medium text-gray-700 hover:text-primary hover:bg-gray-50 rounded-md">İletişim</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="bg-primary text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">Yerinde Buharlı Yatak Yıkama</h1>
+            <p class="text-lg opacity-80">
+                <a href="index.html" class="hover:underline">Ana Sayfa</a> &raquo; 
+                <span>Hizmetler</span> &raquo; 
+                <span class="font-semibold text-white">Yatak Yıkama</span>
+            </p>
+        </div>
+    </section>
+
+    <section class="py-16 bg-white flex-grow">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col lg:flex-row gap-12 items-center">
+                <div class="lg:w-1/2">
+                    <h2 class="text-3xl font-bold text-dark mb-6">Sağlıklı Bir Uyku İçin <br><span class="text-primary">Derinlemesine Temizlik</span></h2>
+                    <p class="mb-4">Ömrümüzün üçte birini geçirdiğimiz yataklarımız, zamanla bakteri, toz akarı (mayt), deri döküntüleri ve ter birikintilerinin merkezi haline gelir. Klasik silme yöntemleri sadece yüzeyi nemlendirir ve bu bakterilerin daha derine inmesine sebep olur.</p>
+                    <p class="mb-6">Ay Halı Yıkama olarak, profesyonel buharlı ve vakumlu makinelerimizle yataklarınızı evinizde, yatak odanızda derinlemesine yıkıyoruz. Özellikle alerji, astım hastaları ve bebekler için hijyenik bir uyku ortamı sağlıyoruz.</p>
+                    
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center text-dark font-medium"><i class="fas fa-check-circle text-primary mr-3 text-lg"></i> 140°C Buhar ile Dezenfekte</li>
+                        <li class="flex items-center text-dark font-medium"><i class="fas fa-check-circle text-primary mr-3 text-lg"></i> İdrar ve Ter Lekelerine Özel Çözüm</li>
+                        <li class="flex items-center text-dark font-medium"><i class="fas fa-check-circle text-primary mr-3 text-lg"></i> Anti-Alerjik ve Bitkisel Şampuan</li>
+                        <li class="flex items-center text-dark font-medium"><i class="fas fa-check-circle text-primary mr-3 text-lg"></i> Yüksek Vakum (Kusma Yapmaz)</li>
+                    </ul>
+                </div>
+                <div class="lg:w-1/2">
+                    <img src="https://images.pexels.com/photos/6873185/pexels-photo-6873185.jpeg?_gl=1*7mgh8u*_ga*NjY0ODg4NDIwLjE3NzYyMDQ1Njg.*_ga_8JE65Q40S6*czE3NzYyMDQ1NjgkbzEkZzEkdDE3NzYyMDU0MDQkajYwJGwwJGgw" alt="Denizli Buharlı Yatak Yıkama" class="rounded-xl shadow-xl w-full h-auto object-cover transition-transform duration-300 hover:scale-105">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 bg-light">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-dark mb-4">Yatak Temizleme Aşamaları</h2>
+                <p class="text-gray-600">Yatağınızın kumaşına ve dolgu malzemesine zarar vermeden uyguladığımız işlemler.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-white p-6 rounded-lg shadow text-center relative border-b-4 border-primary hover:-translate-y-1 transition duration-300">
+                    <div class="w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-4 shadow-md">1</div>
+                    <h3 class="font-bold text-dark mb-2">Kuru Vakum</h3>
+                    <p class="text-sm text-gray-600">Yatak yüzeyindeki toz, saç, kıl ve deri döküntüleri güçlü vakum makinesi ile çekilerek ıslak yıkamaya hazırlanır.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow text-center relative border-b-4 border-primary hover:-translate-y-1 transition duration-300">
+                    <div class="w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-4 shadow-md">2</div>
+                    <h3 class="font-bold text-dark mb-2">Leke Müdahalesi</h3>
+                    <p class="text-sm text-gray-600">Sarı lekeler, kan veya idrar izleri varsa, kumaşın yapısına uygun organik leke çözücüler lokal olarak uygulanır.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow text-center relative border-b-4 border-primary hover:-translate-y-1 transition duration-300">
+                    <div class="w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-4 shadow-md">3</div>
+                    <h3 class="font-bold text-dark mb-2">Buharlı Yıkama</h3>
+                    <p class="text-sm text-gray-600">Sıcak buhar ve deterjan yatağın içine enjekte edilir. Bu işlem maytları öldürür ve kirleri yüzeye çıkarır.</p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow text-center relative border-b-4 border-primary hover:-translate-y-1 transition duration-300">
+                    <div class="w-12 h-12 bg-primary text-white rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-4 shadow-md">4</div>
+                    <h3 class="font-bold text-dark mb-2">Vakumlama</h3>
+                    <p class="text-sm text-gray-600">Çözülen kirli su ve deterjan kalıntıları %95 oranında vakumla geri çekilir. Yatak nemli kalır, ıslak kalmaz.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-10">
+                <h2 class="text-3xl font-bold text-dark mb-4">Merak Edilenler</h2>
+                <p class="text-gray-600">Yatak yıkama hizmetimizle ilgili sıkça sorulan sorular.</p>
+            </div>
+            <div class="space-y-4">
+                <div class="bg-light border border-gray-200 rounded-lg overflow-hidden">
+                    <button class="faq-btn w-full px-6 py-4 text-left font-semibold text-dark flex justify-between items-center focus:outline-none">
+                        Yatağım ne zaman kurur?
+                        <i class="fas fa-chevron-down text-primary transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-4 text-gray-600">
+                        <p>Yüksek vakum gücüne sahip makinelerimiz sayesinde yatağınızda minimum nem kalır. Ortalama 6 ile 8 saat arasında (oda sıcaklığına bağlı olarak) tamamen kurumuş ve kullanıma hazır olur.</p>
+                    </div>
+                </div>
+                <div class="bg-light border border-gray-200 rounded-lg overflow-hidden">
+                    <button class="faq-btn w-full px-6 py-4 text-left font-semibold text-dark flex justify-between items-center focus:outline-none">
+                        İdrar lekesi ve kokusu çıkar mı?
+                        <i class="fas fa-chevron-down text-primary transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-4 text-gray-600">
+                        <p>İdrar (çiş) lekeleri kumaşı yakmadıysa (renk deformasyonu yoksa) %90 oranında çıkar. Koku ise kullandığımız özel enzim bakterili şampuanlar sayesinde tamamen yok edilir.</p>
+                    </div>
+                </div>
+                <div class="bg-light border border-gray-200 rounded-lg overflow-hidden">
+                    <button class="faq-btn w-full px-6 py-4 text-left font-semibold text-dark flex justify-between items-center focus:outline-none">
+                        Kimyasallar sağlığa zararlı mı?
+                        <i class="fas fa-chevron-down text-primary transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-content hidden px-6 pb-4 text-gray-600">
+                        <p>Hayır. Özellikle bebek yataklarında ve astım hastalarının yataklarında %100 bitkisel ve durulaması kolay ürünler kullanıyoruz. Kimyasal kalıntı bırakmıyoruz.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 bg-primary text-white text-center">
+        <div class="max-w-4xl mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-4">Yatağınızdaki Görünmeyen Tehlikelerden Kurtulun!</h2>
+            <p class="text-lg mb-8 opacity-90">Bebek yatakları ve çift kişilik yataklarda kampanya fiyatlarını kaçırmayın.</p>
+            <a href="tel:+905452045165" class="inline-flex items-center justify-center px-8 py-4 bg-white text-primary font-bold text-lg rounded-full hover:bg-gray-100 transition shadow-lg">
+                <i class="fas fa-phone-alt mr-3"></i> Hemen Ara: 0546 284 45 03
+            </a>
+        </div>
+    </section>
+
+    <footer id="contact" class="bg-gray-900 text-white pt-16 pb-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
+                <div>
+                    <h3 class="text-2xl font-bold text-primary border-b border-gray-700 pb-3 mb-6">Ay Halı Yıkama</h3>
+                    <p class="text-gray-400">Denizli'nin en hijyenik halı, koltuk ve perde yıkama fabrikası. Müşteri memnuniyeti odaklı hizmet.</p>
+                    <p>
+                        <div class="flex space-x-4 mt-6">
+                            <a href="https://www.instagram.com/denizliayhalikoltukyikama/" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center text-gray-400 hover:bg-gradient-to-tr hover:from-yellow-400 hover:via-pink-500 hover:to-purple-600 hover:text-white transition-all duration-300">
+                                <i class="fab fa-instagram text-xl"></i>
+                            </a>
+                        </div>
+                    </p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold text-white border-b border-gray-700 pb-3 mb-6">Hızlı Menü</h3>
+                    <ul class="space-y-3">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white transition">Ana Sayfa</a></li>
+                        <li><a href="hali-yikama.html" class="text-gray-400 hover:text-white transition">Halı Yıkama</a></li>
+                        <li><a href="koltuk-yikama.html" class="text-gray-400 hover:text-white transition">Koltuk Yıkama</a></li>
+                        <li><a href="perde-yikama.html" class="text-gray-400 hover:text-white transition">Perde Yıkama</a></li>
+                        <li><a href="yatak-yikama.html" class="text-gray-400 hover:text-white transition">Yatak Yıkama</a></li>
+                        <li><a href="oto-koltuk-yikama.html" class="text-gray-400 hover:text-white transition">Oto Koltuk Yıkama</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold text-white border-b border-gray-700 pb-3 mb-6">İletişim</h3>
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt mt-1 mr-3 text-primary"></i> 
+                            <span class="text-gray-400">Pamukkale / DENİZLİ</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-phone mr-3 text-primary"></i> 
+                            <a href="tel:+905462844503" class="text-gray-400 hover:text-white transition">0546 284 45 03</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 text-center text-gray-500 text-sm">
+                &copy; 2026 Ay Halı Yıkama. Tüm Hakları Saklıdır.
+            </div>
+        </div>
+    </footer>
+
+    <a href="tel:+905462844503" class="fixed bottom-6 left-6 w-14 h-14 bg-primary text-white rounded-full flex items-center justify-center text-2xl shadow-lg hover:bg-primaryHover hover:scale-110 transition-all duration-300 z-50">
+        <i class="fas fa-phone"></i>
+    </a>
+
+    <a href="https://wa.me/905462844503" target="_blank" rel="noopener noreferrer" class="fixed bottom-6 right-6 w-14 h-14 bg-whatsapp text-white rounded-full flex items-center justify-center text-3xl shadow-lg hover:bg-whatsappHover hover:scale-110 transition-all duration-300 z-50">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <a href="https://www.instagram.com/denizliayhalikoltukyikama/" target="_blank" rel="noopener noreferrer" class="fixed bottom-6 left-1/2 -translate-x-1/2 w-14 h-14 bg-gradient-to-tr from-yellow-400 via-pink-500 to-purple-600 text-white rounded-full flex md:hidden items-center justify-center text-3xl shadow-lg hover:scale-110 transition-all duration-300 z-50">
+        <i class="fab fa-instagram"></i>
+    </a>
+
+    <script>
+        // Mobil Menü İşlemleri
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Mobil Dropdown
+        const mobileServicesBtn = document.getElementById('mobile-services-btn');
+        const mobileServicesMenu = document.getElementById('mobile-services-menu');
+        const mobileServicesIcon = document.getElementById('mobile-services-icon');
+
+        mobileServicesBtn.addEventListener('click', () => {
+            mobileServicesMenu.classList.toggle('hidden');
+            if (mobileServicesMenu.classList.contains('hidden')) {
+                mobileServicesIcon.style.transform = 'rotate(0deg)';
+                mobileServicesBtn.classList.remove('text-primary');
+            } else {
+                mobileServicesIcon.style.transform = 'rotate(180deg)';
+                mobileServicesBtn.classList.add('text-primary');
+            }
+        });
+
+        // Sıkça Sorulan Sorular (Accordion) İşlemleri
+        const faqBtns = document.querySelectorAll('.faq-btn');
+
+        faqBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const content = btn.nextElementSibling;
+                const icon = btn.querySelector('i');
+
+                content.classList.toggle('hidden');
+                
+                if (content.classList.contains('hidden')) {
+                    icon.style.transform = 'rotate(0deg)';
+                    btn.classList.remove('text-primary');
+                } else {
+                    icon.style.transform = 'rotate(180deg)';
+                    btn.classList.add('text-primary');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
