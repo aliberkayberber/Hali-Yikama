@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     
     <script>
         tailwind.config = {
@@ -100,7 +101,7 @@
         </div>
     </section>
 
-    <section class="py-16 bg-white flex-grow">
+    <!-- <section class="py-16 bg-white flex-grow">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex flex-col lg:flex-row gap-12 items-center">
                 <div class="lg:w-1/2">
@@ -120,8 +121,29 @@
                 </div>
             </div>
         </div>
+    </section> -->
+<section class="py-16 bg-white flex-grow overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col lg:flex-row gap-12 items-center">
+                <div class="lg:w-1/2">
+                    <h1 class="text-3xl font-bold text-dark mb-6" data-aos="fade-up" data-aos-delay="100">Araç Koltuğu Yıkama <br><span class="text-primary">Detaylı İç Hijyen</span></h1>
+                    <p class="mb-4" data-aos="fade-up" data-aos-delay="200">Araç içinde dökülen sıvılar, tozlar ve kötü kokular sıradan oto kuaför işlemleriyle tamamen çıkmaz. <strong class="text-dark">Denizli Ay Halı Koltuk Yıkama</strong> olarak, aracınızın koltuklarını özel buharlı ve fırçalı makinelerimizle ilk günkü temizliğine kavuşturuyoruz.</p>
+                    <p class="mb-6" data-aos="fade-up" data-aos-delay="300">Aracınızın bulunduğu yere (eviniz veya iş yeriniz) gelerek, kumaş veya deri koltuk yapısına uygun leke sökücülerle derinlemesine yıkama ve yüksek emişli vakumlama yapıyoruz.</p>
+                    
+                    <h2 class="text-xl font-bold text-dark mb-4" data-aos="fade-up" data-aos-delay="400">Araç Temizliğinde Sağladıklarımız:</h2>
+                    <ul class="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-8" data-aos="fade-up" data-aos-delay="500">
+                        <li class="flex items-start text-dark font-medium"><i class="fas fa-check text-whatsapp mt-1 mr-3 text-lg"></i> Binek & Ticari Araç Koltuğu Yıkama</li>
+                        <li class="flex items-start text-dark font-medium"><i class="fas fa-check text-whatsapp mt-1 mr-3 text-lg"></i> Kötü Koku ve Sigara İzi Giderme</li>
+                        <li class="flex items-start text-dark font-medium"><i class="fas fa-check text-whatsapp mt-1 mr-3 text-lg"></i> Su, Kahve ve Yağ Lekesi Temizliği</li>
+                        <li class="flex items-start text-dark font-medium"><i class="fas fa-check text-whatsapp mt-1 mr-3 text-lg"></i> Kumaşa Zarar Vermeyen Fırçalama</li>
+                    </ul>
+                </div>
+                <div class="lg:w-1/2" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1200">
+                    <img src="https://images.pexels.com/photos/6873185/pexels-photo-6873185.jpeg?_gl=1*7mgh8u*_ga*NjY0ODg4NDIwLjE3NzYyMDQ1Njg.*_ga_8JE65Q40S6*czE3NzYyMDQ1NjgkbzEkZzEkdDE3NzYyMDU0MDQkajYwJGwwJGgw" alt="Denizli Ay Araç Koltuğu Yıkama Oto Kuaför Detaylı Temizlik" class="rounded-xl shadow-xl w-full h-auto object-cover transition-transform duration-300 hover:scale-105">
+                </div>
+            </div>
+        </div>
     </section>
-
     <section class="py-16 bg-light">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-12">
@@ -305,5 +327,20 @@
             });
         });
     </script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+        // AOS Animasyonlarını Başlat
+        AOS.init({
+            offset: 120, // Animasyonun tetiklenmesi için kaydırma mesafesi (px)
+            delay: 100, // Animasyonun başlamadan önceki gecikmesi (ms)
+            duration: 800, // Animasyonun süresi (ms) - 800ms ideal ve yumuşaktır
+            easing: 'ease-in-out', // Animasyonun ivmelenme eğrisi
+            once: true, // Animasyon sadece bir kez çalışsın (yukarı çıkarken tekrar çalışmaz)
+            mirror: false, // Animasyonun ekranın dışına çıkarken tekrar etmemesi
+        });
+        </script>
+
+</body>
 </body>
 </html>

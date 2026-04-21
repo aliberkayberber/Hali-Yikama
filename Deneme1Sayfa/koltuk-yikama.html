@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     
     <script>
         tailwind.config = {
@@ -98,7 +100,7 @@
         </div>
     </section>
 
-    <section class="py-16 bg-white flex-grow">
+    <!-- <section class="py-16 bg-white flex-grow">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex flex-col lg:flex-row gap-12 items-center">
                 <div class="lg:w-1/2">
@@ -115,6 +117,30 @@
                 </div>
                 <div class="lg:w-1/2">
                     <img src="https://images.pexels.com/photos/4401538/pexels-photo-4401538.jpeg?_gl=1*ekudpg*_ga*NjY0ODg4NDIwLjE3NzYyMDQ1Njg.*_ga_8JE65Q40S6*czE3NzYyMDQ1NjgkbzEkZzEkdDE3NzYyMDQ2NjQkajQwJGwwJGgw" alt="Denizli Yerinde Koltuk Yıkama" class="rounded-xl shadow-xl w-full h-auto object-cover">
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <section class="py-16 bg-white flex-grow overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col lg:flex-row gap-12 items-center">
+                <div class="lg:w-1/2">
+                    <h1 class="text-3xl font-bold text-dark mb-6" data-aos="fade-up" data-aos-delay="100">Yerinde Buharlı Yıkamayla <br><span class="text-primary">Koltuklarınız İlk Günkü Gibi</span></h1>
+                    <p class="mb-4" data-aos="fade-up" data-aos-delay="200"><strong class="text-dark">Denizli Ay Halı Koltuk Yıkama</strong> profesyonel ekibiyle, koltuk ve yataklarınızı evinizden çıkarmadan, yerinde sıcak buharlı sistemlerle yıkamaktadır. Kumaş içine işlemiş ter, mayt (toz akarı) ve zorlu lekeler yüksek vakumla tamamen çekilir.</p>
+                    <p class="mb-6" data-aos="fade-up" data-aos-delay="300">İster evinizdeki salon takımı, ister aracınızın koltukları olsun; kumaş yapısına zarar vermeyen özel solüsyonlar ve bitkisel leke çıkarıcılar kullanarak sağlıklı bir yaşam alanı sunuyoruz.</p>
+                    
+                    <h2 class="text-xl font-bold text-dark mb-4" data-aos="fade-up" data-aos-delay="400">Temizlediğimiz Koltuk ve Yatak Türleri:</h2>
+                    <ul class="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-8" data-aos="fade-up" data-aos-delay="500">
+                        <li class="flex items-start text-dark font-medium"><i class="fas fa-check text-whatsapp mt-1 mr-3 text-lg"></i> Ev & Ofis Koltuk Takımları</li>
+                        <li class="flex items-start text-dark font-medium"><i class="fas fa-check text-whatsapp mt-1 mr-3 text-lg"></i> L Koltuk ve Köşe Takımları</li>
+                        <li class="flex items-start text-dark font-medium"><i class="fas fa-check text-whatsapp mt-1 mr-3 text-lg"></i> Kanepe & Berjer Yıkama</li>
+                        <li class="flex items-start text-dark font-medium"><i class="fas fa-check text-whatsapp mt-1 mr-3 text-lg"></i> Araç Koltuğu Yıkama (Oto Koltuk)</li>
+                        <li class="flex items-start text-dark font-medium"><i class="fas fa-check text-whatsapp mt-1 mr-3 text-lg"></i> Tek & Çift Kişilik Yatak Yıkama</li>
+                    </ul>
+                </div>
+                <div class="lg:w-1/2" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1200">
+                    <img src="https://images.pexels.com/photos/4401538/pexels-photo-4401538.jpeg?_gl=1*ekudpg*_ga*NjY0ODg4NDIwLjE3NzYyMDQ1Njg.*_ga_8JE65Q40S6*czE3NzYyMDQ1NjgkbzEkZzEkdDE3NzYyMDQ2NjQkajQwJGwwJGgw" alt="Denizli Ay Koltuk Yıkama Araç Koltuğu ve Kanepe Temizliği" class="rounded-xl shadow-xl w-full h-auto object-cover transition-transform duration-300 hover:scale-105">
                 </div>
             </div>
         </div>
@@ -303,5 +329,19 @@
             });
         });
     </script>
+
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // AOS Animasyonlarını Başlat
+        AOS.init({
+            offset: 120, // Animasyonun tetiklenmesi için kaydırma mesafesi (px)
+            delay: 100, // Animasyonun başlamadan önceki gecikmesi (ms)
+            duration: 800, // Animasyonun süresi (ms) - 800ms ideal ve yumuşaktır
+            easing: 'ease-in-out', // Animasyonun ivmelenme eğrisi
+            once: true, // Animasyon sadece bir kez çalışsın (yukarı çıkarken tekrar çalışmaz)
+            mirror: false, // Animasyonun ekranın dışına çıkarken tekrar etmemesi
+        });
+    </script>
+
 </body>
 </html>
