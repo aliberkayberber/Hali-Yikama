@@ -8,7 +8,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
-    
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <script src="https://cdn.tailwindcss.com"></script>
     
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
@@ -171,14 +172,14 @@
     </section>
 
 
-    <section id="services" class="py-20 bg-light">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="services" class="py-20 bg-light overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" data-aos="fade-up">
             <div class="text-center mb-16">
                 <h2 class="text-3xl md:text-4xl font-bold text-dark mb-4">Profesyonel Hizmetlerimiz</h2>
                 <p class="text-lg text-gray-600">Evinizin ve aracınızın hijyeni için ihtiyacınız olan tüm temizlik çözümleri tek çatı altında.</p>
             </div>
             
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" data-aos="fade-up" data-aos-delay="100">
                 <div class="bg-white rounded-xl shadow-md overflow-hidden hover:-translate-y-2 transition duration-300 group">
                     <img src="https://thumbs.dreamstime.com/b/professional-carpet-cleaning-service-using-powerful-extraction-machine-fluffy-rug-person-blue-overalls-uses-steam-cleaner-450725027.jpg?w=1400" alt="Halı Yıkama" class="w-full h-48 object-cover">
                     <div class="p-6 text-center">
@@ -287,54 +288,6 @@
         </div>
     </section>
 
-
-    <!-- <section id="pricing" class="py-20 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-4xl font-bold text-dark mb-4">Denizli Halı Yıkama Fiyatları</h2>
-                <p class="text-lg text-gray-600">Denizli'de en uygun fiyatlarla, kaliteli ve güvenilir yıkama hizmeti sunuyoruz.</p>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="border border-gray-200 rounded-xl p-8 hover:shadow-lg transition">
-                    <h3 class="text-2xl font-bold text-primary border-b-2 border-primary pb-4 mb-6">Halı Yıkama</h3>
-                    <ul class="space-y-4">
-                        <li class="flex justify-between border-b border-dashed border-gray-300 pb-2"><span>Makine Halısı</span> <strong class="text-dark">85 TL/m²</strong></li>
-                        <li class="flex justify-between border-b border-dashed border-gray-300 pb-2"><span>Bambu</span> <strong class="text-dark">200 TL/m²</strong></li>
-                        <li class="flex justify-between border-b border-dashed border-gray-300 pb-2"><span>Shaggy</span> <strong class="text-dark">150 TL/m²</strong></li>
-                        <li class="flex justify-between border-b border-dashed border-gray-300 pb-2"><span>El Dokuma</span> <strong class="text-dark">150 TL/m²</strong></li>
-                        <li class="flex justify-between border-b border-dashed border-gray-300 pb-2"><span>Yün Milas</span> <strong class="text-dark">150 TL/m²</strong></li>
-                        <li class="flex justify-between border-b border-dashed border-gray-300 pb-2"><span>İpek</span> <strong class="text-dark">200 TL/m²</strong></li>
-                    </ul>
-                </div>
-                <div class="border border-gray-200 rounded-xl p-8 hover:shadow-lg transition">
-                    <h3 class="text-2xl font-bold text-primary border-b-2 border-primary pb-4 mb-6">Koltuk & Yatak</h3>
-                    <ul class="space-y-4">
-                        <li class="flex justify-between border-b border-dashed border-gray-300 pb-2"><span>Mindersiz Takım</span> <strong class="text-dark">1750 TL</strong></li>
-                        <li class="flex justify-between border-b border-dashed border-gray-300 pb-2"><span>Minderli Takım</span> <strong class="text-dark">2000 TL</strong></li>
-                        <li class="flex justify-between border-b border-dashed border-gray-300 pb-2"><span>Tek Kişilik Yatak</span> <strong class="text-dark">1000 TL</strong></li>
-                        <li class="flex justify-between border-b border-dashed border-gray-300 pb-2"><span>Çift Kişilik Yatak</span> <strong class="text-dark">1500 TL</strong></li>
-                    </ul>
-                </div>
-                <div class="border border-gray-200 rounded-xl p-8 hover:shadow-lg transition">
-                    <h3 class="text-2xl font-bold text-primary border-b-2 border-primary pb-4 mb-6">Perde & Diğer</h3>
-                    <ul class="space-y-4">
-                        <li class="flex justify-between border-b border-dashed border-gray-300 pb-2"><span>Stor & Zebra</span> <strong class="text-dark">120 TL/m²</strong></li>
-                        <li class="flex justify-between border-b border-dashed border-gray-300 pb-2"><span>Yün Yorgan (adet)</span> <strong class="text-dark">500 TL</strong></li>
-                        <li class="flex justify-between border-b border-dashed border-gray-300 pb-2"><span>Battaniye (adet)</span> <strong class="text-dark">400 TL</strong></li>
-                        <li class="flex justify-between border-b border-dashed border-gray-300 pb-2"><span>Akrilik</span> <strong class="text-dark">200 TL/m²</strong></li>
-                    </ul>
-                </div>
-                    <div class="border border-gray-200 rounded-xl p-8 hover:shadow-lg transition">
-                    <h3 class="text-2xl font-bold text-primary border-b-2 border-primary pb-4 mb-6">Oto Koltuk Yıkama</h3>
-                    <ul class="space-y-4">
-                        <li class="flex justify-between border-b border-dashed border-gray-300 pb-2"><span>Araba Koltuğu (5'li)</span> <strong class="text-dark">1500 TL</strong></li>
-                    </ul>
-                </div>
-            </div>
-            <p class="text-center mt-12 text-sm text-gray-500 italic">NOT: Fiyat listemiz, Denizli Halı Yıkamacılar Derneği’nin ortak kararıyla belirlenen minimum ücretler esas alınarak hazırlanmıştır. Fiyatlar m² fiyatıdır ve KDV dahil değildir.</p>
-        </div>
-    </section> -->
 
     <section id="pricing" class="py-20 bg-white overflow-hidden">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -488,13 +441,13 @@
         </div>
     </section>
 
-    <section class="py-20 bg-light">
-        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section class="py-20 bg-light overflow-hidden">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8" data-aos="fade-up">
             <div class="text-center mb-12">
                 <h2 class="text-3xl md:text-4xl font-bold text-dark">Sıkça Sorulan Sorular</h2>
             </div>
             <div class="space-y-4">
-                <div class="bg-white border border-gray-200 rounded-lg overflow-hidden">
+                <div class="bg-white border border-gray-200 rounded-lg overflow-hidden" data-aos="fade-up" data-aos-delay="100">
                     <button class="faq-btn w-full px-6 py-4 text-left font-semibold text-dark flex justify-between items-center focus:outline-none">
                         Halılar kaç gün içinde teslim edilir?
                         <i class="fas fa-chevron-down text-primary transition-transform duration-300"></i>
@@ -503,7 +456,7 @@
                         <p>Halılarınız alındıktan sonra yıkama ve kurutma işlemlerine bağlı olarak ortalama 2-4 gün içerisinde teslim edilir.</p>
                     </div>
                 </div>
-                <div class="bg-white border border-gray-200 rounded-lg overflow-hidden">
+                <div class="bg-white border border-gray-200 rounded-lg overflow-hidden" data-aos="fade-up" data-aos-delay="200">
                     <button class="faq-btn w-full px-6 py-4 text-left font-semibold text-dark flex justify-between items-center focus:outline-none">
                         Servis ücreti alıyor musunuz?
                         <i class="fas fa-chevron-down text-primary transition-transform duration-300"></i>
@@ -512,7 +465,7 @@
                         <p>Merkezefendi ve Pamukkale ilçelerindeki siparişlerinizde servisimiz ücretsizdir.</p>
                     </div>
                 </div>
-                <div class="bg-white border border-gray-200 rounded-lg overflow-hidden">
+                <div class="bg-white border border-gray-200 rounded-lg overflow-hidden" data-aos="fade-up" data-aos-delay="300">
                     <button class="faq-btn w-full px-6 py-4 text-left font-semibold text-dark flex justify-between items-center focus:outline-none">
                         Hangi deterjanları kullanıyorsunuz?
                         <i class="fas fa-chevron-down text-primary transition-transform duration-300"></i>
@@ -690,7 +643,18 @@
 
     </script>
 
-    
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // AOS Animasyonlarını Başlat
+        AOS.init({
+            offset: 120, // Animasyonun tetiklenmesi için kaydırma mesafesi (px)
+            delay: 100, // Animasyonun başlamadan önceki gecikmesi (ms)
+            duration: 800, // Animasyonun süresi (ms) - 800ms ideal ve yumuşaktır
+            easing: 'ease-in-out', // Animasyonun ivmelenme eğrisi
+            once: true, // Animasyon sadece bir kez çalışsın (yukarı çıkarken tekrar çalışmaz)
+            mirror: false, // Animasyonun ekranın dışına çıkarken tekrar etmemesi
+        });
+    </script>
 
 
 </body>
